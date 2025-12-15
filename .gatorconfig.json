@@ -1,0 +1,3 @@
+{
+    "db_url": "postgres://tuanha:@localhost:5432/gator?sslmode=disable"
+  }
