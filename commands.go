@@ -99,7 +99,6 @@ func handlerAgg(s *state, cmd Command) error {
 	for ; ; <-ticker.C {
 		scrapeFeeds(s)
 	}
-	return nil
 }
 
 func handlerAddFeed(s *state, cmd Command, user database.User) error {
@@ -200,7 +199,7 @@ func handlerUnfollow(s *state, cmd Command, user database.User) error {
 	if err != nil {
 		return err
 	}
-	s.db.DeleteFollow(context.Background(), database.DeleteFollowParams{feed.ID, user.ID})
+	s.db.DeleteFollow(context.Background(), database.DeleteFollowParams{FeedID: feed.ID, UserID: user.ID})
 	return nil
 }
 
