@@ -1,5 +1,7 @@
 # Blog Aggregator
 
+![CI](https://github.com/haanhtuandev/blog-aggregator/actions/workflows/ci.yml/badge.svg)
+
 A command-line RSS feed aggregator written in Go that allows users to subscribe to blogs and news sources, aggregate their content, and browse posts from multiple sources in one place.
 
 ## Features
